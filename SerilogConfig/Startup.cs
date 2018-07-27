@@ -54,3 +54,7 @@ namespace SerilogConfig
         }
     }
 }
+
+//https://medium.com/@cecildt/quick-start-using-elasticsearch-kibana-with-asp-net-core-2-0-6f179b6d2d02
+
+//https://www.humankode.com/asp-net-core/logging-with-elasticsearch-kibana-asp-net-core-and-docker
