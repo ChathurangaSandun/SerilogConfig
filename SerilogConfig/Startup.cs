@@ -9,16 +9,25 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Serilog;
+using Serilog.Sinks.Elasticsearch;
 
 namespace SerilogConfig
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
         {
             Configuration = configuration;
             Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
+            var elasticUri = Configuration["ElasticConfiguration:Uri"];
 
+            Log.Logger = new LoggerConfiguration()
+                .Enrich.FromLogContext()
+                .WriteTo.Elasticsearch(new ElasticsearchSinkOptions(new Uri(elasticUri))
+                {
+                    AutoRegisterTemplate = true,
+                })
+            .CreateLogger();
         }
 
         public IConfiguration Configuration { get; }
@@ -33,7 +42,9 @@ namespace SerilogConfig
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory )
         {
             loggerFactory.AddSerilog();
-             
+            //loggerFactory.AddApplicationInsights(app.ApplicationServices, LogLevel.Warning);
+
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
