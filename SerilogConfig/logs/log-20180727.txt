@@ -1,0 +1,66 @@
+2018-07-27 18:27:26.309 +05:30 [Information] User profile is available. Using '"C:\Users\Chathuranga Sandun\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-07-27 18:27:26.742 +05:30 [Debug] Reading data from file '"C:\Users\Chathuranga Sandun\AppData\Local\ASP.NET\DataProtection-Keys\key-a1813d54-73c6-4e2a-bd6b-a04419c0337c.xml"'.
+2018-07-27 18:27:26.857 +05:30 [Debug] Reading data from file '"C:\Users\Chathuranga Sandun\AppData\Local\ASP.NET\DataProtection-Keys\key-adfcc17c-1e70-4b5b-9a60-dd633a34f6b9.xml"'.
+2018-07-27 18:27:26.927 +05:30 [Debug] Found key {a1813d54-73c6-4e2a-bd6b-a04419c0337c}.
+2018-07-27 18:27:26.953 +05:30 [Debug] Found key {adfcc17c-1e70-4b5b-9a60-dd633a34f6b9}.
+2018-07-27 18:27:26.977 +05:30 [Debug] Considering key {adfcc17c-1e70-4b5b-9a60-dd633a34f6b9} with expiration date 2018-10-20 08:17:54Z as default key.
+2018-07-27 18:27:26.982 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-07-27 18:27:26.983 +05:30 [Debug] Decrypting secret element using Windows DPAPI.
+2018-07-27 18:27:26.985 +05:30 [Debug] Forwarded activator type request from "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=2.0.2.0, Culture=neutral, PublicKeyToken=adb9793829ddae60" to "Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60"
+2018-07-27 18:27:26.986 +05:30 [Debug] Opening CNG algorithm '"AES"' from provider 'null' with chaining mode CBC.
+2018-07-27 18:27:26.990 +05:30 [Debug] Opening CNG algorithm '"SHA256"' from provider 'null' with HMAC.
+2018-07-27 18:27:26.995 +05:30 [Debug] Using key {adfcc17c-1e70-4b5b-9a60-dd633a34f6b9} as the default key.
+2018-07-27 18:27:26.996 +05:30 [Debug] Key ring with default key {adfcc17c-1e70-4b5b-9a60-dd633a34f6b9} was loaded during application startup.
+2018-07-27 18:27:28.184 +05:30 [Debug] Hosting starting
+2018-07-27 18:27:28.667 +05:30 [Debug] Hosting started
+2018-07-27 18:27:28.668 +05:30 [Debug] Loaded hosting startup assembly "SerilogConfig"
+2018-07-27 18:27:28.668 +05:30 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.Server.IISIntegration"
+2018-07-27 18:27:28.668 +05:30 [Debug] Loaded hosting startup assembly "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+2018-07-27 18:27:28.756 +05:30 [Debug] Connection id ""0HLFJO21465CH"" started.
+2018-07-27 18:27:28.756 +05:30 [Debug] Connection id ""0HLFJO21465CI"" started.
+2018-07-27 18:27:28.975 +05:30 [Information] Request starting HTTP/1.1 DEBUG http://localhost:54066/  0
+2018-07-27 18:27:28.975 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:54066/api/values  
+2018-07-27 18:27:29.082 +05:30 [Debug] Connection id ""0HLFJO21465CH"" completed keep alive response.
+2018-07-27 18:27:29.132 +05:30 [Information] Request finished in 112.118ms 200 
+2018-07-27 18:27:29.935 +05:30 [Debug] Request successfully matched the route with name 'null' and template '"api/Values"'.
+2018-07-27 18:27:29.952 +05:30 [Debug] Action '"SerilogConfig.Controllers.ValuesController.Post (SerilogConfig)"' with id '"2e965f1c-0c23-461b-8b39-6c670f82cfa8"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-07-27 18:27:30.155 +05:30 [Debug] Executing action "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)"
+2018-07-27 18:27:30.454 +05:30 [Information] Executing action method "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)" with arguments (null) - ModelState is Valid
+2018-07-27 18:27:30.457 +05:30 [Information] In get action.
+2018-07-27 18:27:30.457 +05:30 [Debug] Executed action method "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult".
+2018-07-27 18:27:30.463 +05:30 [Debug] No information found on request to perform content negotiation.
+2018-07-27 18:27:30.463 +05:30 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2018-07-27 18:27:30.463 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-07-27 18:27:30.662 +05:30 [Information] Executed action "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)" in 502.0553ms
+2018-07-27 18:27:30.664 +05:30 [Debug] Connection id ""0HLFJO21465CI"" completed keep alive response.
+2018-07-27 18:27:30.664 +05:30 [Information] Request finished in 1693.9562ms 200 application/json; charset=utf-8
+2018-07-27 18:27:30.877 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:54066/favicon.ico  
+2018-07-27 18:27:30.878 +05:30 [Debug] Request did not match any routes.
+2018-07-27 18:27:30.878 +05:30 [Debug] Connection id ""0HLFJO21465CH"" completed keep alive response.
+2018-07-27 18:27:30.879 +05:30 [Information] Request finished in 1.6729ms 404 
+2018-07-27 18:28:31.388 +05:30 [Debug] Connection id ""0HLFJO21465CI"" received FIN.
+2018-07-27 18:28:31.388 +05:30 [Debug] Connection id ""0HLFJO21465CH"" received FIN.
+2018-07-27 18:28:31.388 +05:30 [Debug] Connection id ""0HLFJO21465CH"" disconnecting.
+2018-07-27 18:28:31.388 +05:30 [Debug] Connection id ""0HLFJO21465CI"" disconnecting.
+2018-07-27 18:28:31.390 +05:30 [Debug] Connection id ""0HLFJO21465CJ"" started.
+2018-07-27 18:28:31.445 +05:30 [Debug] Connection id ""0HLFJO21465CH"" sending FIN.
+2018-07-27 18:28:31.445 +05:30 [Debug] Connection id ""0HLFJO21465CI"" sending FIN.
+2018-07-27 18:28:31.446 +05:30 [Information] Request starting HTTP/1.1 GET http://localhost:54066/api/values  
+2018-07-27 18:28:31.447 +05:30 [Debug] Request successfully matched the route with name 'null' and template '"api/Values"'.
+2018-07-27 18:28:31.447 +05:30 [Debug] Action '"SerilogConfig.Controllers.ValuesController.Post (SerilogConfig)"' with id '"2e965f1c-0c23-461b-8b39-6c670f82cfa8"' did not match the constraint '"Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint"'
+2018-07-27 18:28:31.448 +05:30 [Debug] Executing action "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)"
+2018-07-27 18:28:31.470 +05:30 [Debug] Connection id ""0HLFJO21465CH"" stopped.
+2018-07-27 18:28:31.470 +05:30 [Information] Executing action method "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)" with arguments (null) - ModelState is Valid
+2018-07-27 18:28:31.470 +05:30 [Debug] Connection id ""0HLFJO21465CI"" stopped.
+2018-07-27 18:28:31.470 +05:30 [Information] In get action.
+2018-07-27 18:28:31.471 +05:30 [Debug] Executed action method "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult".
+2018-07-27 18:28:31.471 +05:30 [Debug] No information found on request to perform content negotiation.
+2018-07-27 18:28:31.471 +05:30 [Debug] Selected output formatter '"Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter"' and content type '"application/json"' to write the response.
+2018-07-27 18:28:31.471 +05:30 [Information] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext".
+2018-07-27 18:28:31.472 +05:30 [Information] Executed action "SerilogConfig.Controllers.ValuesController.Get (SerilogConfig)" in 24.0067ms
+2018-07-27 18:28:31.472 +05:30 [Debug] Connection id ""0HLFJO21465CJ"" completed keep alive response.
+2018-07-27 18:28:31.472 +05:30 [Information] Request finished in 25.8103ms 200 application/json; charset=utf-8
+2018-07-27 18:31:08.723 +05:30 [Debug] Connection id ""0HLFJO21465CJ"" received FIN.
+2018-07-27 18:31:08.723 +05:30 [Debug] Connection id ""0HLFJO21465CJ"" disconnecting.
+2018-07-27 18:31:08.724 +05:30 [Debug] Connection id ""0HLFJO21465CJ"" sending FIN.
+2018-07-27 18:31:08.724 +05:30 [Debug] Connection id ""0HLFJO21465CJ"" stopped.

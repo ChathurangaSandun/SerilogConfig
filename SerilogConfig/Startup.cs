@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Serilog;
 
 namespace SerilogConfig
 {
@@ -16,6 +17,8 @@ namespace SerilogConfig
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
+
         }
 
         public IConfiguration Configuration { get; }
@@ -27,8 +30,10 @@ namespace SerilogConfig
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory )
         {
+            loggerFactory.AddSerilog();
+             
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
